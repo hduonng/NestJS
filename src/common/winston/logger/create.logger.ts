@@ -1,12 +1,14 @@
+// import { Inject } from '@nestjs/common';
+// import { ConfigType } from '@nestjs/config';
 // import * as winston from 'winston';
 // import * as Transport from 'winston-transport';
+// import LoggerConfig from '../../../config/logger.config';
 // import { LoggerConfigType } from '../../../config/types';
 // import 'winston-daily-rotate-file';
 // import { LoggerConstant } from '../../logger/constant';
-// import { CreateTransport } from '../transport';
 //
 // export class WinstonLogger {
-//      constructor(private readonly transport: CreateTransport) {}
+//      constructor(@Inject(LoggerConfig.KEY) private readonly loggerConfig: ConfigType<typeof LoggerConfig>) {}
 //
 //      private getTransport(loggerConfig: LoggerConfigType) {
 //           const fileEnabled: boolean = loggerConfig.log.logFileEnabled;

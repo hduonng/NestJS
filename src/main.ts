@@ -11,9 +11,9 @@ async function bootstrap() {
      mongoose.set('debug', true);
 
      const app = await NestFactory.create<NestExpressApplication>(AppModule, {
-          logger: Logger,
-          bufferLogs: false,
-          autoFlushLogs: true,
+          // logger: Logger,
+          // bufferLogs: false,
+          // autoFlushLogs: true,
      });
 
      app.useLogger(app.get(WINSTON_MODULE_NEST_PROVIDER));
